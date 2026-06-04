@@ -6,7 +6,6 @@ addons.register('story-theme', () => {
   addons.add('story-theme/manager', {
     title: 'Themes',
     type: types.TOOL,
-    paramKey: 'theme',
     match: ({ tabId, viewMode }) => !tabId && (viewMode === 'story' || viewMode === 'docs'),
     render: ThemeRender,
   });

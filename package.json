@@ -31,7 +31,6 @@
       "default": "./dist/index.js"
     },
     "./preset": "./dist/preset.js",
-    "./manager": "./dist/manager.js",
     "./package.json": "./package.json"
   },
   "files": [
@@ -89,9 +88,6 @@
     "access": "public"
   },
   "bundler": {
-    "managerEntries": [
-      "src/manager.tsx"
-    ],
     "nodeEntries": [
       "src/preset.ts"
     ]

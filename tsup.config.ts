@@ -15,7 +15,7 @@ export default defineConfig(async () => {
   const packageJson = (await import('./package.json', { with: { type: 'json' } })).default;
 
   const {
-    bundler: { managerEntries = [], nodeEntries = [] },
+    bundler: { nodeEntries = [] },
   } = packageJson;
 
   const commonConfig: Options = {
@@ -37,26 +37,12 @@ export default defineConfig(async () => {
   const configs: Options[] = [
     {
       ...commonConfig,
-      entry: ['src/index.ts', 'src/docs.tsx', 'src/decorator.ts'],
+      entry: ['src/index.ts', 'src/docs.tsx', 'src/decorator.ts', 'src/manager.tsx'],
       platform: 'browser',
       target: 'esnext',
       dts: true,
     },
   ];
-
-  /*
-   manager entries are entries meant to be loaded into the manager UI
-   they'll have manager-specific packages externalized and they won't be usable in node
-   they won't have types generated for them as they're usually loaded automatically by Storybook
-  */
-  if (managerEntries.length) {
-    configs.push({
-      ...commonConfig,
-      entry: managerEntries,
-      platform: 'browser',
-      target: 'esnext', // we can use esnext for manager entries since Storybook will bundle the addon's manager entries again anyway
-    });
-  }
 
   /*
    node entries are entries meant to be used in node-only
