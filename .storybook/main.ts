@@ -1,6 +1,6 @@
 import { defineMain } from '@storybook/react-vite/node';
 
-const config = defineMain({
+export default defineMain({
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
     '@storybook/addon-docs',
@@ -14,5 +14,3 @@ const config = defineMain({
   ],
   framework: '@storybook/react-vite',
 });
-
-export default config;
