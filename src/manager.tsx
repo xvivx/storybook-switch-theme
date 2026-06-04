@@ -3,7 +3,7 @@ import { addons, types } from 'storybook/manager-api';
 import ThemeRender from './Theme';
 
 addons.register('story-theme', () => {
-  addons.add('story-theme', {
+  addons.add('story-theme/manager', {
     title: 'Themes',
     type: types.TOOL,
     paramKey: 'theme',
