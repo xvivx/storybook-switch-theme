@@ -1,14 +1,20 @@
-// You can use presets to augment the Storybook configuration
-// You rarely want to do this in addons,
-// so often you want to delete this file and remove the reference to it in package.json#exports and package.json#bunder.nodeEntries
-// Read more about presets at https://storybook.js.org/docs/addons/writing-presets
+import { fileURLToPath } from 'node:url';
 
-export const viteFinal = async (config: unknown) => {
-  console.log('This addon is augmenting the Vite config');
-  return config;
+type Options = {
+  decorator?: boolean;
+  docs?: boolean;
 };
 
-export const webpack = async (config: unknown) => {
-  console.log('This addon is augmenting the Webpack config');
-  return config;
+export const previewAnnotations = (entries: string[] = [], options: Options = {}) => {
+  const result = [...entries];
+
+  if (options.decorator !== false) {
+    result.push(fileURLToPath(import.meta.resolve('./decorator')));
+  }
+
+  if (options.docs !== false) {
+    result.push(fileURLToPath(import.meta.resolve('./docs')));
+  }
+
+  return result;
 };

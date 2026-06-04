@@ -23,7 +23,7 @@ export default defineConfig(async () => {
      keep this line commented until https://github.com/egoist/tsup/issues/1270 is resolved
      clean: options.watch ? false : true,
     */
-    clean: true,
+    clean: false,
     format: ['esm'],
     treeshake: true,
     splitting: true,
