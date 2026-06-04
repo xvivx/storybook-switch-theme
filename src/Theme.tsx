@@ -3,8 +3,8 @@ import { MoonIcon, SunIcon } from '@storybook/icons';
 import { ToggleButton } from 'storybook/internal/components';
 import { useStorybookApi } from 'storybook/manager-api';
 import { themes } from 'storybook/theming';
-
-import { store, SET_THEME_EVENT, type Theme } from './store';
+import type { Theme } from './types';
+import { store, SET_THEME_EVENT } from './store';
 
 const ThemeSwitcher = () => {
   const api = useStorybookApi();

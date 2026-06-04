@@ -1,4 +1,4 @@
-export type Theme = 'light' | 'dark';
+import type { Theme } from './types';
 
 export const THEME_STORAGE_KEY = 'theme';
 export const SET_THEME_EVENT = 'set-theme';

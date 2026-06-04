@@ -24,20 +24,19 @@ bun add storybook-addon-theme
 
 Register the addon in your Storybook main configuration (for example, `.storybook/main.js`):
 
-```ts
-// .storybook/main.js
+```tsx
+// .storybook/main.ts
 import { defineMain } from '@storybook/react-vite/node';
 
 export default defineMain({
-  addons: [
-    {
-      name: 'storybook-addon-theme',
-      options: {
-        decorator: false,
-        docs: false,
-      },
-    },
-  ],
+  addons: ['storybook-addon-theme'],
+});
+
+// .storybook/preview.tsx
+import addTheme from 'storybook-addon-theme';
+
+const preview = definePreview({
+  addons: [addTheme()],
 });
 ```
 
@@ -57,9 +56,10 @@ import React, { useEffect } from 'react';
 import { definePreview } from '@storybook/react-vite';
 import { DocsContainer } from '@storybook/addon-docs/blocks';
 import { themes } from 'storybook/theming';
-import { useTheme } from 'storybook-addon-theme';
+import addTheme, { useTheme } from 'storybook-addon-theme';
 
 const preview = definePreview({
+  addons: [addTheme({ docs: false, decorator: false })],
   decorators: [
     // Make stories respond to theme changes
     (Story) => {
