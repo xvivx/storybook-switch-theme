@@ -3,7 +3,20 @@
   "version": "10.0.1",
   "description": "A lightweight Storybook addon for theme switching, keeping Manager UI, Canvas stories, and Docs pages in sync.",
   "keywords": [
-    "storybook-addon"
+    "storybook-addon",
+    "storybook-addon-theme",
+    "storybook",
+    "theme",
+    "theme-switcher",
+    "theme-switch",
+    "dark-mode",
+    "light-mode",
+    "storybook-plugin",
+    "addon",
+    "tailwindcss",
+    "react",
+    "vite",
+    "docs"
   ],
   "repository": {
     "type": "git",
@@ -57,9 +70,7 @@
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-storybook": "10.4.2",
-    "npm-run-all2": "^8.0.4",
     "prettier": "^3.6.2",
-    "prompts": "^2.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "10.4.2",
@@ -92,5 +103,6 @@
       "react-native"
     ],
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
-  }
+  },
+  "packageManager": "pnpm@10.22.0+sha512.bf049efe995b28f527fd2b41ae0474ce29186f7edcb3bf545087bd61fbbebb2bf75362d1307fda09c2d288e1e499787ac12d4fcb617a974718a6051f2eee741c"
 }
