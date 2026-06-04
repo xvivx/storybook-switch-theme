@@ -1,3 +1,15 @@
+# v10.0.6 (Thu Jun 04 2026)
+
+#### ⚠️ Pushed to `main`
+
+- fix: definePreview bug ([@aaaabc](https://github.com/aaaabc))
+
+#### Authors: 1
+
+- [@aaaabc](https://github.com/aaaabc)
+
+---
+
 # v10.0.5 (Thu Jun 04 2026)
 
 #### ⚠️ Pushed to `main`
