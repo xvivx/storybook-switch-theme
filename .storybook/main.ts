@@ -7,8 +7,8 @@ const config = defineMain({
     {
       name: import.meta.resolve('./local-preset.ts'),
       options: {
-        decorator: false,
-        docs: false,
+        decorator: true,
+        docs: true,
       },
     },
   ],

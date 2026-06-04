@@ -17,13 +17,7 @@
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
     },
-    "./preview": {
-      "types": "./dist/preview.d.ts",
-      "default": "./dist/preview.js"
-    },
-    "./preset": "./dist/preset.js",
     "./manager": "./dist/manager.js",
-    "./manager-helpers": "./dist/manager-helpers.js",
     "./package.json": "./package.json"
   },
   "files": [
@@ -84,12 +78,7 @@
   },
   "bundler": {
     "managerEntries": [
-      "src/manager.tsx",
-      "src/manager-helpers.tsx"
-    ],
-    "previewEntries": [
-      "src/preview.tsx",
-      "src/index.ts"
+      "src/manager.tsx"
     ],
     "nodeEntries": [
       "src/preset.ts"
