@@ -1,3 +1,15 @@
+# v10.0.5 (Thu Jun 04 2026)
+
+#### ⚠️ Pushed to `main`
+
+- fix: packagejson ([@aaaabc](https://github.com/aaaabc))
+
+#### Authors: 1
+
+- [@aaaabc](https://github.com/aaaabc)
+
+---
+
 # v10.0.4 (Thu Jun 04 2026)
 
 #### 🐛 Bug Fix
