@@ -1,29 +1,36 @@
 {
-  "name": "storybook-addon-kit",
-  "version": "0.0.0",
-  "description": "everything you need to build a Storybook addon",
+  "name": "storybook-addon-theme",
+  "version": "10.0.1",
+  "description": "A lightweight Storybook addon for theme switching, keeping Manager UI, Canvas stories, and Docs pages in sync.",
   "keywords": [
-    "storybook-addon"
+    "storybook-addon",
+    "storybook-addon-theme",
+    "storybook",
+    "theme",
+    "theme-switcher",
+    "theme-switch",
+    "dark-mode",
+    "light-mode",
+    "storybook-plugin",
+    "addon",
+    "tailwindcss",
+    "react",
+    "vite",
+    "docs"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/storybook-addon-kit"
+    "url": "https://github.com/xvivx/storybook-switch-theme"
   },
   "license": "MIT",
-  "author": "package-author",
+  "author": "xvivx <xvivx.luck@gmail.com>",
   "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
     },
-    "./preview": {
-      "types": "./dist/preview.d.ts",
-      "default": "./dist/preview.js"
-    },
-    "./preset": "./dist/preset.js",
     "./manager": "./dist/manager.js",
-    "./manager-helpers": "./dist/manager-helpers.js",
     "./package.json": "./package.json"
   },
   "files": [
@@ -38,7 +45,6 @@
     "build-storybook": "storybook build",
     "build:watch": "npm run build -- --watch",
     "eject-ts": "zx scripts/eject-typescript.js",
-    "postinstall": "node scripts/welcome.js",
     "format": "prettier --write .",
     "lint": "eslint --cache .",
     "lint:fix": "pnpm lint --fix",
@@ -50,9 +56,9 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
-    "@storybook/addon-docs": "next",
+    "@storybook/addon-docs": "10.4.2",
     "@storybook/icons": "^2.0.0",
-    "@storybook/react-vite": "next",
+    "@storybook/react-vite": "10.4.2",
     "@types/node": "^20",
     "@types/react": "^18.2.65",
     "@types/react-dom": "^18.2.21",
@@ -63,13 +69,11 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-storybook": "next",
-    "npm-run-all2": "^8.0.4",
+    "eslint-plugin-storybook": "10.4.2",
     "prettier": "^3.6.2",
-    "prompts": "^2.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "storybook": "next",
+    "storybook": "10.4.2",
     "ts-dedent": "^2.2.0",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3",
@@ -85,21 +89,18 @@
   },
   "bundler": {
     "managerEntries": [
-      "src/manager.tsx",
-      "src/manager-helpers.tsx"
-    ],
-    "previewEntries": [
-      "src/preview.ts",
-      "src/index.ts"
+      "src/manager.tsx"
     ],
     "nodeEntries": [
       "src/preset.ts"
     ]
   },
   "storybook": {
-    "displayName": "Addon Kit",
+    "displayName": "storybook-theme",
     "supportedFrameworks": [
-      "supported-frameworks"
+      "react",
+      "preact",
+      "react-native"
     ],
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   },
