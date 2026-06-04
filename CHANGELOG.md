@@ -1,3 +1,15 @@
+# v10.0.8 (Thu Jun 04 2026)
+
+#### ⚠️ Pushed to `main`
+
+- fix: addon id ([@aaaabc](https://github.com/aaaabc))
+
+#### Authors: 1
+
+- [@aaaabc](https://github.com/aaaabc)
+
+---
+
 # v10.0.7 (Thu Jun 04 2026)
 
 #### ⚠️ Pushed to `main`
