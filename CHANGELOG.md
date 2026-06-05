@@ -1,3 +1,15 @@
+# v10.0.9 (Fri Jun 05 2026)
+
+#### 🐛 Bug Fix
+
+- Update workflow [#2](https://github.com/xvivx/storybook-switch-theme/pull/2) ([@xvivx](https://github.com/xvivx))
+
+#### Authors: 1
+
+- xvivx ([@xvivx](https://github.com/xvivx))
+
+---
+
 # v10.0.8 (Thu Jun 04 2026)
 
 #### ⚠️ Pushed to `main`
