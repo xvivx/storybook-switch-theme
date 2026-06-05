@@ -51,15 +51,13 @@
     "prerelease": "zx scripts/prepublish-checks.js",
     "release": "npm run build && auto shipit",
     "start": "run-p build:watch \"storybook --quiet\"",
-    "storybook": "storybook dev -p 6006",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "storybook": "storybook dev -p 6006"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "@storybook/addon-docs": "10.4.2",
     "@storybook/icons": "^2.0.0",
     "@storybook/react-vite": "10.4.2",
-    "@types/node": "^20",
     "@types/react": "^18.2.65",
     "@types/react-dom": "^18.2.21",
     "@vitejs/plugin-react": "^4.7.0",
