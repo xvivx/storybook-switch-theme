@@ -1,6 +1,6 @@
 import { defineConfig, type Options } from 'tsup';
 
-const NODE_TARGET = '24.16'; // Minimum Node version supported by Storybook 10
+const NODE_TARGET = 'node22.21'; // Minimum Node version supported by Storybook 10
 
 export default defineConfig(async () => {
   const packageJson = (await import('./package.json', { with: { type: 'json' } })).default;
