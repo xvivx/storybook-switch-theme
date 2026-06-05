@@ -1,17 +1,8 @@
 import { defineConfig, type Options } from 'tsup';
 
-const NODE_TARGET = 'node20.19'; // Minimum Node version supported by Storybook 10
+const NODE_TARGET = '24.16'; // Minimum Node version supported by Storybook 10
 
 export default defineConfig(async () => {
-  // reading the three types of entries from package.json, which has the following structure:
-  // {
-  //  ...
-  //   "bundler": {
-  //     "managerEntries": ["./src/manager.ts"],
-  //     "previewEntries": ["./src/preview.ts", "./src/index.ts"]
-  //     "nodeEntries": ["./src/preset.ts"]
-  //   }
-  // }
   const packageJson = (await import('./package.json', { with: { type: 'json' } })).default;
 
   const {
