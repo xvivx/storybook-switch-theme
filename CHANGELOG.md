@@ -1,3 +1,16 @@
+# v10.0.10 (Wed Jun 10 2026)
+
+#### ⚠️ Pushed to `main`
+
+- feat: update doc ([@xvivx](https://github.com/xvivx))
+- feat: remove pr workflow ([@xvivx](https://github.com/xvivx))
+
+#### Authors: 1
+
+- xvivx ([@xvivx](https://github.com/xvivx))
+
+---
+
 # v10.0.9 (Fri Jun 05 2026)
 
 #### 🐛 Bug Fix
