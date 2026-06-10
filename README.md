@@ -9,20 +9,13 @@ Use your preferred package manager:
 ```bash
 # npm
 npm install storybook-addon-theme
-
-# yarn
-yarn add storybook-addon-theme
-
-# pnpm
-pnpm add storybook-addon-theme
-
-# bun
-bun add storybook-addon-theme
 ```
 
 ## Usage
 
 Register the addon in your Storybook main configuration (for example, `.storybook/main.js`):
+
+### CSF3
 
 ```tsx
 // .storybook/main.ts
@@ -32,11 +25,41 @@ export default defineMain({
   addons: ['storybook-addon-theme'],
 });
 
+// custom addon
+export default defineMain({
+  addons: [
+    {
+      name: 'storybook-addon-theme',
+      options: {
+        decorator: true,
+        docs: true,
+      },
+    },
+  ],
+});
+```
+
+### CSF Next
+
+```ts
+// .storybook/main.ts
+import { defineMain } from '@storybook/react-vite/node';
+
+export default defineMain({
+  addons: ['storybook-addon-theme'],
+});
+
 // .storybook/preview.tsx
+import { definePreview } from '@storybook/react-vite';
 import addTheme from 'storybook-addon-theme';
 
 const preview = definePreview({
   addons: [addTheme()],
+});
+
+// custom preview
+const preview = definePreview({
+  addons: [addTheme({ decorator: true, docs: true })],
 });
 ```
 
