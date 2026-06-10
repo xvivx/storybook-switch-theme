@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-theme",
-  "version": "10.0.9",
+  "version": "10.0.10",
   "description": "A lightweight Storybook addon for theme switching, keeping Manager UI, Canvas stories, and Docs pages in sync.",
   "keywords": [
     "storybook-addon",
