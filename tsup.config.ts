@@ -18,6 +18,7 @@ export default defineConfig(async () => {
     format: ['esm'],
     treeshake: true,
     splitting: true,
+    tsconfig: './tsconfig.json',
     /*
      The following packages are provided by Storybook and should always be externalized
      Meaning they shouldn't be bundled with the addon, and they shouldn't be regular dependencies either
