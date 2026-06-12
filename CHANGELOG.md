@@ -1,3 +1,15 @@
+# v10.0.11 (Fri Jun 12 2026)
+
+#### ⚠️ Pushed to `main`
+
+- feat: update packages ([@xvivx](https://github.com/xvivx))
+
+#### Authors: 1
+
+- xvivx ([@xvivx](https://github.com/xvivx))
+
+---
+
 # v10.0.10 (Wed Jun 10 2026)
 
 #### ⚠️ Pushed to `main`
